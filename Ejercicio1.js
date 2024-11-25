@@ -6,3 +6,16 @@
 // Utiliza estructuras if para resolverlo y 
 //muestra un mensaje explicativo en cada caso.
 
+const prompt = require ('prompt-sync')();
+
+let Number = parseInt (prompt("Enter a number: "));
+
+if (Number === 0){
+console.log('The number is zero');
+} else if (Number > 0){
+    console.log('The numer is positive');
+} else if (Number < 0){
+    console.log('The number is negative');
+} else{
+    console.log('Invalid number');
+}
