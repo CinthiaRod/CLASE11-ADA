@@ -9,3 +9,38 @@
 //"Color no reconocido, ingresa rojo, amarillo o verde." 
 //Utiliza un switch para resolver este ejercicio.
 
+const prompt = require('prompt-sync')();
+
+let Color = prompt( "Please  choose a traffic light color: ");
+
+switch (Color){
+    case 'red':
+        console.log ('Stop, you can not move forward');
+        break;
+    case 'Red':
+        console.log ('Stop, you can not move forward');
+        break;
+    case 'RED':
+            console.log ('Stop, you can not move forward');
+            break;
+    case 'yellow':
+        console.log('Caution, prepare to move forward');
+        break;
+    case 'Yellow':
+            console.log('Caution, prepare to move forward');
+            break;
+     case 'YELLOW':
+                console.log('Caution, prepare to move forward');
+                break;
+    case 'green':
+        console.log('Move forward safely');
+        break;
+    case 'Green':
+            console.log('Move forward safely');
+            break;
+    case 'GREEN':
+        console.log('Move forward safely');
+        break;
+    default:
+        console.log('Unrecognized color, enter red, yellow or green');
+}
