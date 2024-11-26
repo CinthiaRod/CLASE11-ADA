@@ -6,3 +6,22 @@
 //Si no acierta después de los 3 intentos, muestra el número secreto.
 // Usa un for para resolver este ejercicio.
 
+const prompt =require('prompt-sync')();
+
+let RandomNumber = Math.floor(Math.random() * 10) + 1;
+let Attempts = 0;
+
+for (Attempts; Attempts < 3; Attempts ++){
+
+let AttemptsUser = parseInt(prompt( `Attempt ${Attempts + 1}. What is the secret number? Choose between 1 and 10: `));
+
+if( AttemptsUser === RandomNumber){
+console.log ('You got it right!');
+break;
+}else{
+console.log(`Sorry, ${AttemptsUser} it is not correct!`);
+}
+}if(Attempts ===3){
+console.log(`I am sorry, you did not get it right. The correct number is ${RandomNumber}`);
+}
+  
