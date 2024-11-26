@@ -6,3 +6,25 @@
 //el programa debe mostrar un mensaje de error. 
 //Usa switch para resolverlo.
 
+const prompt = require('prompt-sync')();
+
+let FirstNumber = parseInt(prompt("Enter a first number:" ));
+let SecondNumber = parseInt(prompt("Enter a second number: "));
+let Operation = prompt ("Enter the symbol for your operation (+, -, *, /): ");
+
+switch (Operation){
+case '+':
+console.log ('The result is: ', FirstNumber + SecondNumber);
+break;
+case '-':
+console.log ('The result is: ' , FirstNumber - SecondNumber);
+break;
+case '*':
+console.log ('The result is: ' , FirstNumber * SecondNumber);
+break;
+case '/':
+console.log ('The result is: ' , FirstNumber / SecondNumber);
+break;
+default:
+console.log ('The result is: Invalid operation');
+}
